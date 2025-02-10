@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="max-w-[1280px] mx-auto flex justify-between items-center py-6 px-4"
+    >
+      <img src="./images/logo.svg" class="w-[100px] md:w-auto" />
+      <div
+        class="flex gap-5 md:gap-10 text-[var(--DesaturatedBlue)] font-medium"
+      >
+        <a href="#"> Features</a>
+        <a href="#"> Team</a>
+        <a href="#"> Sign In</a>
+      </div>
+    </nav>
+    <main>
+      <section
+        class="max-w-[1280px] mx-auto py-6 px-4 md:flex flex-row-reverse justify-between items-center"
+      >
+        <div class="md:w-[45%]">
+          <img src="./images/illustration-1.svg" />
+        </div>
+        <div
+          class="text-center md:text-start mt-12 md:mt-0 md:w-[50%] lg:w-[40%]"
+        >
+          <h1
+            class="font-bold text-3xl md:text-2xl lg:text-3xl text-[var(--VeryDarkBlue)]"
+          >
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p
+            class="my-6 text-[var(--DesaturatedBlue)] font-medium px-3 md:px-0"
+          >
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="mx-6 md:mx-0 md:flex gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="border border-[var(--VeryDarkBlue)] rounded-sm p-3 w-full"
+            />
+            <button
+              class="text-[var(--LightGrayishBlue)] bg-[var(--BrightBlue)] w-full p-3 mt-4 font-bold rounded-sm md:w-[50%] md:mt-0"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-cover mt-16 py-6 px-4">
+        <div
+          class="max-w-[1280px] mx-auto py-16 px-4 lg:flex flex-row-reverse items-center justify-between"
+        >
+          <div class="lg:w-[45%]">
+            <img src="./images/illustration-2.svg" />
+          </div>
+          <div class="mt-12 lg:w-[45%]">
+            <h1
+              class="text-[var(--VeryDarkBlue)] font-bold text-xl text-center lg:text-start"
+            >
+              Stay productive, wherever you are
+            </h1>
+            <p class="mt-4">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="mt-4">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div
+              class="mt-6 flex gap-1 border-b border-[var(--ModerateCyan)] border-b-2 w-[168px] mx-auto lg:mx-0"
+            >
+              <a href="#"> See how Fylo works</a>
+              <img src="./images/icon-arrow.svg" alt="" />
+            </div>
+            <div
+              class="mt-8 rounded-lg shadow-lg bg-white p-6 md:w-[380px] mx-auto lg:mx-0"
+            >
+              <img src="./images/icon-quotes.svg" alt="" />
+              <p class="my-4 text-[var(--VeryDarkBlue)]">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./images/avatar-testimonial.jpg"
+                  class="w-[45px] h-[45px] rounded-full"
+                />
+                <div>
+                  <h1 class="text-sm font-bold">Kyle Burton</h1>
+                  <span class="text-sm">Founder & CEO, Huddle </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[var(--DesaturatedBlue)] py-6 px-4">
+        <div
+          class="max-w-[1280px] mx-auto py-6 px-4 md:flex justify-between items-center"
+        >
+          <div
+            class="text-[var(--LightGrayishBlue)] text-center md:text-start md:w-[55%] lg:[w-[40%]]"
+          >
+            <h1 class="font-bold text-xl mb-6">Get early access today</h1>
+            <p class="mx-4 md:mx-0">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="mt-8 md:w-[40%] lg:w-[45%]">
+            <input
+              type="email"
+              placeholder="email@example.com"
+              class="rounded-sm w-full p-3 bg-[var(--LightGrayishBlue)] mb-2"
+            />
+            <button
+              class="bg-[var(--BrightBlue)] rounded-sm w-full p-3 mb-3 md:w-[200px] lg:w-[250px] font-bold text-[var(--LightGrayishBlue)]"
+            >
+              Get Started For Free
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[var(--VeryDarkBlue)] py-12 px-4">
+      <div class="max-w-[1280px] mx-auto px-4">
+        <img src="./images/logo.svg" alt="" />
+        <div class="md:grid grid-cols-12 text-[var(--LightGrayishBlue)] mt-6">
+          <div class="col-span-4 space-y-2">
+            <div class="flex items-center gap-4">
+              <img src="./images/icon-phone.svg" alt="Phone" />
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./images/icon-email.svg" alt="email" />
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+          <div class="col-span-2 space-y-2 flex flex-col my-6 md:my-0">
+            <a href="#"> About Us </a>
+            <a href="#"> Jobs </a>
+            <a href="#"> Press </a>
+            <a href="#"> Blog </a>
+          </div>
+          <div class="col-span-2 space-y-2 flex flex-col my-6 md:my-0">
+            <a href="#"> Contact Us </a>
+            <a href="#"> Terms </a>
+            <a href="#"> Privacy </a>
+          </div>
+          <div class="col-span-4 flex gap-6 justify-center">
+            <i class="bi bi-facebook text-xl"></i>
+            <i class="bi bi-twitter text-xl"></i>
+            <i class="bi bi-instagram text-xl"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
