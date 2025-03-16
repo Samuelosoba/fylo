@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shoe-box {
+  width: 370px;
+  height: 410px;
+  background-color: rgb(64, 62, 62);
+  border-radius: 10px;
+  margin: 50px auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.image-box {
+  height: 50%;
+}
+.content-box {
+  padding: 30px;
+  color: white;
+}
+.content-box h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.content-box p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+button {
+  background-color: aquamarine;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}

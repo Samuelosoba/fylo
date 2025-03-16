@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fill</title>
+  </head>
+  <body>
+    <a href="/">HOME</a>
+    <a href="fill.html">FILL FORM</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="faq.html">FAQs</a>
+    <br /><br />
+    <form>
+      <label for="name">FULL NAME</label>
+      <input type="text" placeholder="inupt full name" id="name" required />
+      <br />
+      <label for="email">EMAIL ADDRESS</label>
+      <input type="email" placeholder="enter email" id="email" />
+      <br />
+      <label for="telephone">PHONE NUMBER</label>
+      <input
+        type="tel"
+        placeholder="input phone number"
+        id="telephone"
+        required
+      />
+      <br />
+      <label for="age">ENTER AGE</label>
+      <input type="number" placeholder="input age" id="age" required />
+      <br />
+      <label for="date">PICK DATE</label>
+      <input type="datetime-local" id="date" required />
+      <br />
+      <input type="file" multiple />
+      <br />
+      <select>
+        <option value="">choose vehicle</option>
+        <option value="">Car</option>
+        <option value="">bike</option>
+        <option value="">truck</option>
+      </select>
+      <br /><br />
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox"> remember password</label>
+      <button>submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/* mobile screen */
+h1 {
+  font-size: 14px;
+  color: red;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+.desktop {
+  display: none;
+}
+.parent {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.parent div {
+  width: 300px;
+  height: 300px;
+  border: 2px solid blue;
+}
+/* tablet screen*/
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    color: green;
+  }
+  .box {
+    width: 500px;
+  }
+}
+/* laptop screen */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    color: blue;
+  }
+  .box {
+    width: 800px;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .parent {
+    flex-direction: row;
+  }
+}
